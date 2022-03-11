@@ -1,0 +1,147 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col">
+      <h1 class="pb-5">Upgrade to the latest version of Revu</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-7">
+      <p>Enter your license information below and we'll check to see if that license is eligible for a free upgrade to
+        the latest version of Revu.</p>
+
+      <form id="eligiblity-form" class="eligiblity-form">
+
+        <div class="form-group">
+          <label for="testSerialNumber" class="font-weight-bold">Serial Number</label>
+          <input type="text" class="allownumeric required form-control" maxlength="7" id="testSerialNumber"
+            placeholder="Enter Serial Number">
+          <small id="emailHelp" class="form-text text-muted">Upgrades for Open Licenses (serial numbers starting with
+            96XXXXX) can be accessed in the Gateway. Once you log in, you'll automatically be issued a key for the
+            latest version.</small>
+        </div>
+        <div class="form-group">
+          <label for="testProductKey" class="font-weight-bold">Product Key</label>
+          <input type="text" class="required form-control" id="testProductKey" placeholder="Enter Product Key">
+          <div id="pkey-error"></div>
+        </div>
+        <div class="form-group">
+          <label for="testEmail" class="font-weight-bold">Primary Contact Email</label>
+          <input type="text" class="required form-control" id="testEmail" placeholder="Enter Primary Contact Email">
+          <div id="email-error"></div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-outline-primary">Check Eligibility</button>
+      </form>
+    </div>
+    <div id="default" class="col">
+      <div class="border border-dark p-4">
+        <h3>Am I eligible for a free upgrade?</h3>
+        <p>You're eligible for a free upgrade to the latest version of Revu if any of following applies:</p>
+        <ul>
+          <li>Your license has active Maintenance</li>
+          <li>Your license was purchased within 30 days of a major release </li>
+        </ul>
+        <small class="text-muted">Contact us if you have any questions.</small>
+      </div>
+    </div>
+    <!--begin New div added by Karthik -->
+    <div id="validLicense" class="col">
+      <div id="validLicenseBox" class="border border-primary p-4">
+        <h3>You're eligible for a free upgrade.</h3>
+        <p>Check to see if your device is <a href="#" class="stretched-link">compatible</a> with this version.Here's
+          what wil happen once you confirm your upgrade.</p>
+
+        <p>1. We'll create a new license with a unique serial number. This will be sent ina license certificate email to
+          bchung@bluebeam.com</p>
+
+        <p>2. All <b id='seats'></b> seats on <b id='licenseNumber'></b> will be moved to the new serial number. Please
+          install at your earliest
+          convenience. USers can continue working in Revu until you install this new version.</p>
+
+        <button type="submit" class="btn btn-success">Sounds Great! Upgrade My License.</button>
+
+      </div>
+    </div>
+    <div id="invalidLicense" class="col">
+      <div id="invalidLicenseBox" class="border border-danger p-4">
+        <h3>Sorry this license is not eligible.</h3>
+        <p>Blue beam offer free upgrades to the latest version of Revu for licenses with active Maintenance or for
+          licenses that have been purchased with in 30 days of a major release.</p>
+        <p>You can purchase an upgrade in our webstore or by contacting your reseller. Feel free to contact us is you
+          have any questions.</p>
+
+      </div>
+    </div>
+    <div id="licenseDetails" class="border border-dark p-4  mt-2">
+      <h4 class="text-primary">Your License details</h4>
+      <h4>Bluebeam Revu 2018 eXtreme</h4>
+      <div class="p-4">
+        <div class="row">
+          <div style="float:left;">
+            Serial Number:
+          </div>
+          <div id="serialNumber" style="float:left;">
+          </div>
+        </div>
+        <div class="row">
+          <div style="float:left;">
+            Product Key:
+          </div>
+          <div id="productKey" style="float:left;">
+          </div>
+        </div>
+        <div class="row">
+          <div style="float:left;">
+            Registered Email:
+          </div>
+          <div id="email" style="float:left;">
+          </div>
+        </div>
+        <div class="row">
+          <div style="float:left;">
+            Total Seats Available:
+          </div>
+          <div id="totalSeats" style="float:left;">
+          </div>
+        </div>
+        <div class="row">
+          <div style="float:left;">
+            Total Seats Installed:
+          </div>
+          <div id="totalSeatsInstalled" style="float:left;">
+          </div>
+        </div>
+        <div class="row">
+          <div style="float:left;">
+            Total Seats Eligible for Upgrade:
+          </div>
+          <div id="totalSeatsEligible" style="float:left;">
+          </div>
+        </div>
+        <div class="row">
+          <div style="float:left;">
+            Maintenance:
+          </div>
+          <div id="maintenance" style="float:left;">
+          </div>
+        </div>
+        <div class="row">
+          <div style="float:left;">
+            Expiration Date:
+          </div>
+          <div id="dateRegistered" style="float:left;">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End New div added by Karthik -->
+    <!-- Begin Credit added by karthik -->
+    <div id="licenseNotFound" class="col">
+      <div id="licenseNotFoundx" class="border border-danger p-4">
+        <h3>License not found.</h3>
+        <p>You can purchase license in our webstore or by contacting your reseller. Feel free to contact us is you
+          have any questions.</p>
+      </div>
+    </div>
+    <!-- End extra credit -->
+  </div>
+</div>

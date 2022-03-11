@@ -1,0 +1,16 @@
+.row {
+  background: #f8f9fa;
+  margin-top: 20px;
+}
+
+.col {
+  border: solid 1px #6c757d;
+  padding: 10px;
+}
+
+.input-validation-error {
+    border: 1px solid #f00 !important;
+    background-color: #F8E0E0 !important;
+}
+
+
